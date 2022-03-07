@@ -25,6 +25,10 @@ def plot_graph():
     plt.xlabel("Timestamp")
     plt.ylabel("Value")
     plt.title("Suhu Udara")
-
-    plt.show()
+    plt.tight_layout()
+    
+    bytes_image = io.BytesIO()
+    plt.savefig(bytes_image, format='png')
+    bytes_image.seek(0)
+    return bytes_image
     
