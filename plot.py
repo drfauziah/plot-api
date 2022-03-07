@@ -21,7 +21,6 @@ def plot_graph():
 
     ax.legend().set_visible(False)
     plt.xticks(rotation = 30)
-    plt.tight_layout()
     plt.xlabel("Timestamp")
     plt.ylabel("Value")
     plt.title("Suhu Udara")
